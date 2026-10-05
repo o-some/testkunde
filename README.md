@@ -19,3 +19,8 @@ Pexels source and author credits: bildnachweise.html.
 
 ## Design reference
 Chelonaki — The Quiet Author, template 037 [Fitness] Member Handbook, inspected from Dropbox on 2026-10-05. Navy/cyan/white, angular image crops, alternating editorial panels and compact typography. Reference artwork is not published; only its visual language is adapted.
+
+
+## Mehrsprachigkeit und Ergänzungen (5. Oktober 2026)
+
+DE im Hauptverzeichnis, EN unter `/en/`, TR unter `/tr/`. Alle fünf Inhalts- und Informationsseiten sind übersetzt, einschließlich Übungsdialogen, Bildalternativen, Demo-Auswahl und Menüs. Sprachwechsel behalten auf der Startseite den Abschnitt. Zwei pausierbare Textlaufbänder werden bei reduzierter Bewegung statisch. Glossar und lokaler Trainingsbogen ergänzen die sechs gleich großen Übungskarten. Keine Nutzerdatenübermittlung.

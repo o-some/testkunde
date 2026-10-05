@@ -1,12 +1,16 @@
 'use strict';
+const language=document.documentElement.lang;
+const ui={de:{open:'Menü öffnen',close:'Menü schließen',pause:'Laufband pausieren',resume:'Laufband fortsetzen',selection:'Deine Demo-Auswahl',level:'Level',price:'50 € pro Monat.',notice:'Dies ist nur eine Vorschau: Es wurde kein Platz reserviert und nichts übermittelt.'},en:{open:'Open menu',close:'Close menu',pause:'Pause scrolling text',resume:'Resume scrolling text',selection:'Your demo selection',level:'Level',price:'€50 per month.',notice:'This is only a preview: no place was reserved and no data was sent.'},tr:{open:'Menüyü aç',close:'Menüyü kapat',pause:'Kayan yazıyı duraklat',resume:'Kayan yazıyı sürdür',selection:'Demo seçimin',level:'Seviye',price:'Ayda 50 €.',notice:'Bu yalnızca önizlemedir: yer ayrılmadı ve veri gönderilmedi.'}}[language]||null;
+document.querySelectorAll('.language-switch a').forEach(a=>a.addEventListener('click',()=>{if(location.hash)a.hash=location.hash;}));
+document.querySelectorAll('.wisdom-toggle').forEach(button=>button.addEventListener('click',()=>{const paused=button.getAttribute('aria-pressed')!=='true';document.getElementById(button.getAttribute('aria-controls')).classList.toggle('is-paused',paused);button.setAttribute('aria-pressed',String(paused));button.textContent=paused?ui.resume:ui.pause;}));
 const nav=document.querySelector('#mobile-nav'),menu=document.querySelector('.menu');
-menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));menu.setAttribute('aria-label',open?'Menü öffnen':'Menü schließen');nav.hidden=open;});
-nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.hidden=true;menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Menü öffnen');}));
+menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));menu.setAttribute('aria-label',open?ui.open:ui.close);nav.hidden=open;});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.hidden=true;menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label',ui.open);}));
 const dialog=document.querySelector('#booking'),form=document.querySelector('#booking-form'),result=document.querySelector('#booking-result');
 document.querySelectorAll('[data-book]').forEach(button=>button.addEventListener('click',()=>{form.hidden=false;result.hidden=true;if(button.dataset.session)document.querySelector('#session').value=button.dataset.session;dialog.showModal();}));
 document.querySelector('.close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
-form.addEventListener('submit',event=>{event.preventDefault();result.textContent=`Deine Demo-Auswahl: ${document.querySelector('#session').value}. Level: ${document.querySelector('#level').value}. 50 € pro Monat. Dies ist nur eine Vorschau: Es wurde kein Platz reserviert und nichts übermittelt.`;form.hidden=true;result.hidden=false;});
+form.addEventListener('submit',event=>{event.preventDefault();result.textContent=`${ui.selection}: ${document.querySelector('#session').value}. ${ui.level}: ${document.querySelector('#level').value}. ${ui.price} ${ui.notice}`;form.hidden=true;result.hidden=false;});
 document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});document.querySelectorAll('.session').forEach(s=>s.hidden=button.dataset.filter!=='all'&&s.dataset.type!==button.dataset.filter);}));
 
 // CAF Module 103: native scroll, once-only reveals, bounded depth and factual counters.

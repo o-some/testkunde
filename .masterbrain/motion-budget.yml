@@ -23,3 +23,10 @@ expansion_2026_10_05:
   goal_selector: immediate no decorative delay
   new_images: three lazy loaded optimized webp symbols
   certification: no formal CAF pass asserted
+
+wisdom_bands:
+  count: 2
+  duration_seconds: 35
+  control: per_band_pause_resume_button
+  reduced_motion: static_wrapped_text
+  duplicate_text: aria_hidden

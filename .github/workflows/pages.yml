@@ -26,6 +26,7 @@ jobs:
           mkdir _site
           cp *.html style.css app.js robots.txt _site/
           cp -r assets _site/assets
+          cp -r en tr _site/
           touch _site/.nojekyll
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
