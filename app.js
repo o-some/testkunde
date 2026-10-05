@@ -76,3 +76,10 @@ addEventListener('resize',queueScroll,{passive:true});
 document.addEventListener('visibilitychange',queueScroll);
 motionPreference.addEventListener('change',()=>{finishMotion();if(!motionPreference.matches)startMotion();});
 startMotion();
+
+// Static-first goal selector: all panels remain available when JavaScript is off.
+const goalButtons=[...document.querySelectorAll('[data-goal]')];
+const goalPanels=[...document.querySelectorAll('[data-goal-panel]')];
+function selectGoal(key){goalButtons.forEach(b=>{const active=b.dataset.goal===key;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});goalPanels.forEach(p=>p.hidden=p.dataset.goalPanel!==key);}
+goalButtons.forEach(b=>b.addEventListener('click',()=>selectGoal(b.dataset.goal)));
+if(goalPanels.length)selectGoal('basis');

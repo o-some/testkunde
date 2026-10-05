@@ -16,3 +16,10 @@ lazy_load: existing_image_lazy_loading
 continuous_work: passive_scroll_requestAnimationFrame_batch_reads_then_writes
 reverse_scroll: preserve_revealed_content
 performance_claim: target_not_measured_certification
+
+expansion_2026_10_05:
+  families: existing section reveal and short stagger
+  native_disclosures: true
+  goal_selector: immediate no decorative delay
+  new_images: three lazy loaded optimized webp symbols
+  certification: no formal CAF pass asserted
