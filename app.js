@@ -1,0 +1,11 @@
+'use strict';
+const nav=document.querySelector('#mobile-nav'),menu=document.querySelector('.menu');
+menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));menu.setAttribute('aria-label',open?'Menü öffnen':'Menü schließen');nav.hidden=open;});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.hidden=true;menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Menü öffnen');}));
+const dialog=document.querySelector('#booking'),form=document.querySelector('#booking-form'),result=document.querySelector('#booking-result');
+document.querySelectorAll('[data-book]').forEach(button=>button.addEventListener('click',()=>{form.hidden=false;result.hidden=true;if(button.dataset.session)document.querySelector('#session').value=button.dataset.session;dialog.showModal();}));
+document.querySelector('.close').addEventListener('click',()=>dialog.close());
+dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
+form.addEventListener('submit',event=>{event.preventDefault();result.textContent=`Deine Demo-Auswahl: ${document.querySelector('#session').value}. Level: ${document.querySelector('#level').value}. 50 € pro Monat. Dies ist nur eine Vorschau: Es wurde kein Platz reserviert und nichts übermittelt.`;form.hidden=true;result.hidden=false;});
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});document.querySelectorAll('.session').forEach(s=>s.hidden=button.dataset.filter!=='all'&&s.dataset.type!==button.dataset.filter);}));
+if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('motion');const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}}),{threshold:0.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));}
