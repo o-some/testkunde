@@ -213,3 +213,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{
 .hero-bottom{position:static;width:100%;margin-top:36px;flex-shrink:0;gap:24px;flex-wrap:wrap}
 .hero .actions{flex-shrink:0}
 @media(max-width:760px){.hero{height:auto;min-height:790px;max-height:none}.hero-content{min-height:790px;padding-bottom:24px}.hero-bottom{margin-top:30px;max-width:100%;padding-right:0}.hero-bottom span:first-child{max-width:none}.hero .actions{align-items:flex-start;flex-direction:column;gap:16px}.hero-copy,.hero h1{flex-shrink:0}}
+
+.hero-bottom span:last-child{display:none}
+@media(max-width:760px){.hero-stamp{left:auto;right:5%}.hero-bottom{max-width:calc(100% - 130px)}}
