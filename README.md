@@ -24,3 +24,7 @@ Chelonaki — The Quiet Author, template 037 [Fitness] Member Handbook, inspecte
 ## Mehrsprachigkeit und Ergänzungen (5. Oktober 2026)
 
 DE im Hauptverzeichnis, EN unter `/en/`, TR unter `/tr/`. Alle fünf Inhalts- und Informationsseiten sind übersetzt, einschließlich Übungsdialogen, Bildalternativen, Demo-Auswahl und Menüs. Sprachwechsel behalten auf der Startseite den Abschnitt. Zwei pausierbare Textlaufbänder werden bei reduzierter Bewegung statisch. Glossar und lokaler Trainingsbogen ergänzen die sechs gleich großen Übungskarten. Keine Nutzerdatenübermittlung.
+
+
+## Parallax-Moment
+Ein einzelner dreischichtiger Outdoor-Moment in der bestehenden Galerie: Foto, lesbarer Text und dekorativer Zielring mit unterschiedlichen Scrollgeschwindigkeiten. Native Scrollsteuerung; unter 900 px und bei reduzierter Bewegung statisch. Texte in DE/EN/TR, keine neuen externen Abhängigkeiten.

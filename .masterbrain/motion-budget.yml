@@ -30,3 +30,16 @@ wisdom_bands:
   control: per_band_pause_resume_button
   reduced_motion: static_wrapped_text
   duplicate_text: aria_hidden
+
+parallax_scene:
+  section: draussen
+  count: 1
+  layers: [existing_photo, readable_caption, decorative_ring]
+  photo_max_px: 80
+  caption_max_px: 17.6
+  ring_max_px: 40
+  mobile: static
+  reduced_motion: static
+  pinning: none
+  scroll_hijack: none
+  new_media: none

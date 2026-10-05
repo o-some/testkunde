@@ -18,13 +18,15 @@ const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
 const root=document.documentElement;
 let motionObserver=null,motionFrame=0;
 const revealTargets=[...document.querySelectorAll('.reveal')];
-const depthTargets=[...document.querySelectorAll('.hero>img,.manifesto>img,.coach-image img,.gallery img')];
+const depthTargets=[...document.querySelectorAll('.hero>img,.manifesto>img,.coach-image img,.gallery img')].filter(el=>!el.classList.contains('parallax-photo'));
+const parallaxScenes=[...document.querySelectorAll('.parallax-scene')];
 const counters=[...document.querySelectorAll('.stats strong')].slice(0,3);
 const completedCounters=new WeakSet();
 function finishMotion(){
  root.classList.remove('motion','caf-motion');
  revealTargets.forEach(el=>el.classList.add('visible'));
  depthTargets.forEach(el=>{el.style.removeProperty('--caf-depth');});
+ parallaxScenes.forEach(el=>el.style.removeProperty('--scene-depth'));
  if(motionObserver)motionObserver.disconnect();
  cancelAnimationFrame(motionFrame);motionFrame=0;
 }
@@ -47,11 +49,17 @@ function paintScroll(){
  if(motionPreference.matches||document.hidden)return;
  const height=innerHeight,scroll=scrollY,total=root.scrollHeight-height;
  const records=innerWidth>=900?depthTargets.map(el=>({el,rect:el.parentElement.getBoundingClientRect()})):[];
+ const scenes=innerWidth>=900?parallaxScenes.map(el=>({el,rect:el.getBoundingClientRect()})):[];
  root.style.setProperty('--caf-progress',String(total>0?Math.min(scroll/total,1):0));
  records.forEach(({el,rect})=>{
   if(rect.bottom<0||rect.top>height)return;
   const progress=Math.max(-1,Math.min(1,(height/2-(rect.top+rect.height/2))/height));
   el.style.setProperty('--caf-depth',`${(progress*48).toFixed(1)}px`);
+ });
+ scenes.forEach(({el,rect})=>{
+  if(rect.bottom<0||rect.top>height)return;
+  const progress=Math.max(-1,Math.min(1,(height/2-(rect.top+rect.height/2))/height));
+  el.style.setProperty('--scene-depth',`${(progress*80).toFixed(1)}px`);
  });
  document.querySelector('header').classList.toggle('scrolled',scroll>80);
 }
