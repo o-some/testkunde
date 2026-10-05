@@ -248,3 +248,5 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{
 @media(max-width:899px){.gallery .parallax-scene{height:490px}.parallax-ring{width:300px;height:300px;right:-80px;top:80px}.gallery .parallax-scene>.parallax-copy{padding:40px 7%}.parallax-axis{display:none}}
 @media(max-width:600px){.gallery .parallax-scene{height:450px}.parallax-copy h3{font-size:clamp(2.65rem,9vw,3.8rem)}.parallax-ring{opacity:.45}.parallax-copy p{font-size:1rem}.parallax-copy .button{font-size:.85rem;padding:14px 18px}}
 @media(prefers-reduced-motion:reduce){.gallery .parallax-scene>.parallax-photo,.gallery .parallax-scene>.parallax-copy,.parallax-ring{transform:none!important}}
+
+.parallax-copy h3 em{color:#40d4f5}.parallax-copy .button{background:#40d4f5;border-color:#40d4f5;color:#071329}
