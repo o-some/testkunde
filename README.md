@@ -32,3 +32,7 @@ Ein einzelner dreischichtiger Outdoor-Moment in der bestehenden Galerie: Foto, l
 
 ## Parallax-Reparatur P10
 Die Outdoor-Szene bewegt sich nun auch unter 900 px (maximal ±90 px Foto). Auf Desktop maximal ±180 px. Text und Zielring bewegen sich gegenläufig; Bildhöhe 190 % verhindert leere Ränder. Eigene Asset-Dateinamen `style-p10.css` und `app-p10.js` umgehen alte Asset-Caches. Reduzierte Bewegung bleibt respektiert. Frühere Aussagen zu statischer mobiler Szene werden durch diesen Abschnitt ersetzt.
+
+
+## P11: zwei ergänzende Tiefenmomente und Übungsschritte
+Coach-Foto und Ausrüstungsbild bewegen sich mit begrenzter Tiefe und gegenläufigen Konturlinien. Bei reduzierter Bewegung statisch. Bildanleitungen bieten eine fokussierte Schrittansicht mit nativen Buttons, übersetzten Labels und Reset beim Schließen. Keine Speicherung.

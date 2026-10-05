@@ -51,3 +51,17 @@ parallax_fix_p10:
   photo_overscan_height: 190_percent
   asset_cache: versioned_filenames
   reduced_motion: respected
+
+p11_depth_cards:
+  count: 2
+  locations: [coach, preparation]
+  image_max_px: 60
+  mobile_image_max_px: 30
+  reduced_motion: static
+  native_scroll: true
+  observer_or_raf: existing_batched_scroll
+exercise_step_focus:
+  native_buttons: true
+  initial_state: all_visible
+  close_state: reset_all_visible
+  persistence: none
