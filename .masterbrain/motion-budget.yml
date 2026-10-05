@@ -65,3 +65,10 @@ exercise_step_focus:
   initial_state: all_visible
   close_state: reset_all_visible
   persistence: none
+
+sales_cleanup_12:
+  visible_brand: Bodyweight Club
+  fabricated_trainer_removed: true
+  selection_flow: browser_only_starting_plan
+  operator_placeholders_retained: true
+  actual_registration_channel: not_configured
