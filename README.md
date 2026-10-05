@@ -28,3 +28,7 @@ DE im Hauptverzeichnis, EN unter `/en/`, TR unter `/tr/`. Alle fünf Inhalts- un
 
 ## Parallax-Moment
 Ein einzelner dreischichtiger Outdoor-Moment in der bestehenden Galerie: Foto, lesbarer Text und dekorativer Zielring mit unterschiedlichen Scrollgeschwindigkeiten. Native Scrollsteuerung; unter 900 px und bei reduzierter Bewegung statisch. Texte in DE/EN/TR, keine neuen externen Abhängigkeiten.
+
+
+## Parallax-Reparatur P10
+Die Outdoor-Szene bewegt sich nun auch unter 900 px (maximal ±90 px Foto). Auf Desktop maximal ±180 px. Text und Zielring bewegen sich gegenläufig; Bildhöhe 190 % verhindert leere Ränder. Eigene Asset-Dateinamen `style-p10.css` und `app-p10.js` umgehen alte Asset-Caches. Reduzierte Bewegung bleibt respektiert. Frühere Aussagen zu statischer mobiler Szene werden durch diesen Abschnitt ersetzt.

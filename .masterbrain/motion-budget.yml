@@ -35,11 +35,19 @@ parallax_scene:
   section: draussen
   count: 1
   layers: [existing_photo, readable_caption, decorative_ring]
-  photo_max_px: 80
-  caption_max_px: 17.6
-  ring_max_px: 40
-  mobile: static
+  photo_max_px: 180
+  caption_max_px: 45
+  ring_max_px: 126
+  mobile: parallax_max_90px
   reduced_motion: static
   pinning: none
   scroll_hijack: none
   new_media: none
+
+parallax_fix_p10:
+  mobile_scene_enabled: true
+  desktop_photo_travel_px: 360
+  mobile_photo_travel_px: 180
+  photo_overscan_height: 190_percent
+  asset_cache: versioned_filenames
+  reduced_motion: respected
