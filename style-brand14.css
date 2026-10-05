@@ -282,7 +282,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{
 /* Brand14: keep the wisdom ticker unobstructed on narrow screens. */
 .wisdom-band{position:relative;clear:both;isolation:isolate}
 .wisdom-toggle.sr-only:focus-visible{position:absolute;top:8px;right:5%;z-index:2;width:auto;height:auto;margin:0;padding:10px 14px;clip:auto;overflow:visible;white-space:normal;background:#fff;color:#071329;border:2px solid #087a9d}
-.wisdom-band:hover .wisdom-track,.wisdom-band:focus-within .wisdom-track{animation-play-state:paused}
+.wisdom-band:hover .wisdom-track{animation-play-state:paused}
 @media(max-width:760px){
   .pricing{display:flex;flex-direction:column;align-items:stretch;gap:35px;padding-bottom:96px;overflow:visible}
   .pricing>.reveal,.pricing>.price-card{width:100%;max-width:100%;min-width:0}
