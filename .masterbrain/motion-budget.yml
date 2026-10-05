@@ -1,0 +1,18 @@
+source: CAF Module 103 Motion & Interaction Engine v1.4.1
+reference: Quiet Author 037 Fitness Member Handbook
+live_tiers: [MICRO, SECTION, NARRATIVE]
+page_transitions: none
+families: [once_only_stagger_reveal, bounded_image_depth, reading_progress, factual_counters]
+scroll: native
+pinning: none
+parallax_max_px: 24
+mobile_parallax: disabled
+webgl_3d: false
+rendered_media: false
+reduced_motion: static_content_immediate_final_values
+frame_rate_target: 60
+max_group_animated_elements: 6
+lazy_load: existing_image_lazy_loading
+continuous_work: passive_scroll_requestAnimationFrame_batch_reads_then_writes
+reverse_scroll: preserve_revealed_content
+performance_claim: target_not_measured_certification
