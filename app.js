@@ -83,3 +83,7 @@ const goalPanels=[...document.querySelectorAll('[data-goal-panel]')];
 function selectGoal(key){goalButtons.forEach(b=>{const active=b.dataset.goal===key;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});goalPanels.forEach(p=>p.hidden=p.dataset.goalPanel!==key);}
 goalButtons.forEach(b=>b.addEventListener('click',()=>selectGoal(b.dataset.goal)));
 if(goalPanels.length)selectGoal('basis');
+
+// Native modal guides keep card heights stable and return focus to the opener.
+document.querySelectorAll('[data-exercise]').forEach(button=>button.addEventListener('click',()=>document.getElementById(button.dataset.exercise).showModal()));
+document.querySelectorAll('.exercise-dialog').forEach(guide=>{guide.querySelector('.exercise-close').addEventListener('click',()=>guide.close());guide.addEventListener('click',event=>{if(event.target!==guide)return;const r=guide.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)guide.close();});});
