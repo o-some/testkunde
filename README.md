@@ -16,3 +16,6 @@ Replace fictional operator, trainer and schedule details. Verify actual legal no
 
 ## Photos
 Pexels source and author credits: bildnachweise.html.
+
+## Design reference
+Chelonaki — The Quiet Author, template 037 [Fitness] Member Handbook, inspected from Dropbox on 2026-10-05. Navy/cyan/white, angular image crops, alternating editorial panels and compact typography. Reference artwork is not published; only its visual language is adapted.
