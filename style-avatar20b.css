@@ -383,3 +383,11 @@ em,.eyebrow,.tag{color:var(--accent-ink)}
 .gallery-feature:hover .gallery-feature-photo{transform:scale(1.025)}
 @media(max-width:760px){.gallery-feature{grid-template-columns:1fr}.gallery-feature-copy{padding:35px 28px}.gallery-feature h3{font-size:clamp(2.3rem,9vw,3.4rem)}.gallery .gallery-feature-photo{height:310px;min-height:0;object-position:43% center}}
 @media(prefers-reduced-motion:reduce){.gallery-feature:hover .gallery-feature-photo{transform:none}}
+
+/* Equal-width four-image row above the feature panel. */
+.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery>figure.reveal{grid-column:auto;min-width:0}
+.gallery>figure.reveal img{object-position:center center}
+.gallery>figure.reveal:nth-of-type(5) img{object-position:39% center}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gallery>figure.reveal{height:clamp(185px,48vw,290px)}.gallery>figure.reveal figcaption{font-size:.75rem;padding:30px 10px 10px}.gallery-feature{grid-column:1/-1}}
