@@ -361,3 +361,7 @@ em,.eyebrow,.tag{color:var(--accent-ink)}
 /* Keep the portrait framed without a gap as the scroll depth moves. */
 .coach-image .depth-window>img{top:-3%;height:132%}
 .caf-motion .coach-image .depth-window>img{transform:translate3d(0,clamp(-25px,var(--card-depth,0px),0px),0)}
+
+/* Membership portrait: give the trainer room and keep his face in view. */
+.price-image{height:clamp(340px,34vw,460px);object-position:50% 17%;filter:none}
+@media(max-width:760px){.price-image{height:clamp(280px,65vw,380px);object-position:50% 20%}}
