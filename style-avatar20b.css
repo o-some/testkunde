@@ -365,3 +365,7 @@ em,.eyebrow,.tag{color:var(--accent-ink)}
 /* Membership portrait: give the trainer room and keep his face in view. */
 .price-image{height:clamp(340px,34vw,460px);object-position:50% 17%;filter:none}
 @media(max-width:760px){.price-image{height:clamp(280px,65vw,380px);object-position:50% 20%}}
+
+/* Rear-view composition: keep the trainer and bar centered. */
+@media(min-width:761px){.hero>img{object-position:50% center}}
+@media(max-width:760px){.hero>img{object-position:50% 30%}}
