@@ -1,8 +1,7 @@
-# TAYLAN FORM – Marke / Brand13
-Unternehmer: Taylan Sik (Schreibweise vom Auftraggeber).
-Name: TAYLAN FORM. Persönliche Marke, verbindet Körperkontrolle, Bewegungsqualität und langfristige Entwicklung.
-Logo: TF-Monogramm, T als stabile Trainingsstange, F als aufwärts gerichtete Form. Navy #102333, Cyan #006d8f.
-Website: Header, Footer, Seitentitel, Favicon, Mitgliedschaft, Informationsseiten und Trainingsnotizen DE/EN/TR.
-Bildgenerierung: integriertes Image Gen, einzelnes transparentes TF-Zeichen, minimaler geometrischer Sportmarkenstil, Navy/Cyan, keine Hanteln oder Personen; Vektorausarbeitung für kleine Darstellung.
-Keine erfundenen Qualifikationen oder Identitätszuweisung an fremde Sportbilder.
-Keine Marken- oder Domainfreigabe behauptet. Anschrift, Kontakt, Teilnahmebedingungen und echter Anmeldeweg noch zu ergänzen.
+# Talisthenics · Brand19
+
+Name chosen by the client: Talisthenics. Website wordmark: TALISTHENICS.
+Entrepreneur: Taylan Sik. The personal name is retained in legal/provider information.
+Logo: sharp angular TC monogram, T for the brand identity and C for calisthenics. Deep wine #301923 and Bordeaux #852b43. Transparent AI-created mark, delivered as WebP for header, footer and favicon; original PNG retained with customer logo files. No trademark or domain clearance is asserted.
+
+Updated German, English and Turkish site titles, header/footer wordmark, visible brand mentions, legal and accessibility pages, exercise headings, membership labels and downloadable training notes. Existing exercise guides, recovery content, parallettes/rings imagery and motion remain present. Repository and customer-folder name remain testkunde.

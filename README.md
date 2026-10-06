@@ -1,4 +1,4 @@
-# TAYLAN FORM
+# TALISTHENICS
 
 Calisthenics-Präsentation in Deutsch, Englisch und Türkisch. Angebot: 50 € pro Person und Monat, drei wöchentliche Termine, maximal zehn Personen pro Einheit.
 
@@ -12,4 +12,4 @@ GitHub Pages im Repository o-some/testkunde. Neue UI-Assets: style-sale12.css un
 Verantwortlichen Diensteanbieter und Kontaktdaten in Impressum und Datenschutz ergänzen. Echten Anmeldeweg und Teilnahmebedingungen bereitstellen. Die Website enthält dafür keine erfundenen Anbieterangaben.
 
 ## Brand13
-TAYLAN FORM, entrepreneur Taylan Sik. TF vector monogram and image-generated concept stored locally. No stock athlete photograph is attributed to Taylan. Provider address, contact and booking channel still required.
+TALISTHENICS, entrepreneur Taylan Sik. TF vector monogram and image-generated concept stored locally. No stock athlete photograph is attributed to Taylan. Provider address, contact and booking channel still required.

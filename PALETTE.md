@@ -1,4 +1,4 @@
-# TAYLAN FORM · Core17
+# TALISTHENICS · Core17
 Bordeaux #852b43 · Dunkles Weinrot #27131b · Offwhite #faf6f3 · Rosé #efb0b8.
 
 18 active photographs and exercise guides use the Bordeaux palette: 15 photographs (including the hero), and three new portrait guides for push-ups, pull-ups and dips. The equipment photograph 15-core17.webp is edited to remove mat and shoes. Older guides and source images remain archived and are not used in the exercise section.
