@@ -391,3 +391,7 @@ em,.eyebrow,.tag{color:var(--accent-ink)}
 .gallery>figure.reveal:nth-of-type(5) img{object-position:39% center}
 @media(max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gallery>figure.reveal{height:clamp(185px,48vw,290px)}.gallery>figure.reveal figcaption{font-size:.75rem;padding:30px 10px 10px}.gallery-feature{grid-column:1/-1}}
+
+/* Leave the facts below the first viewport so their observer starts on scroll. */
+.hero,.hero-content{min-height:max(900px,calc(100svh - 32px))}
+@media(max-width:760px){.hero,.hero-content{min-height:max(790px,calc(100svh - 52px))}}
