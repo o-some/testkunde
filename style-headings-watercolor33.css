@@ -1,0 +1,51 @@
+/* Optional styling layer. Remove its <link> to restore the previous look.
+   Archivo Black: SIL OFL 1.1, bundled in assets/fonts/ArchivoBlack-OFL.txt. */
+@font-face {
+  font-family: 'Archivo Black';
+  src: url('assets/fonts/archivo-black.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+h1, h2, h3, h4, h5, h6,
+.hero h1, .manifesto h2, .parallax-copy h3, .gallery-feature h3,
+.final-cta h2, .faq h2, dialog h2 {
+  font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  letter-spacing: -.035em;
+}
+.intro, .goals-section, .progress-path {
+  position: relative;
+  isolation: isolate;
+  background-image: none;
+}
+.intro::before, .goals-section::before, .progress-path::before {
+  content: '';
+  position: absolute;
+  right: 1%;
+  top: 36px;
+  width: clamp(300px, 37vw, 570px);
+  aspect-ratio: 3 / 2;
+  background: var(--equipment-art) center / contain no-repeat;
+  opacity: .24;
+  pointer-events: none;
+  z-index: 0;
+  -webkit-mask-image: radial-gradient(ellipse at 60% 50%, #000 42%, transparent 76%);
+  mask-image: radial-gradient(ellipse at 60% 50%, #000 42%, transparent 76%);
+}
+.intro { --equipment-art: url('assets/watercolor-pullup33.webp'); }
+.goals-section { --equipment-art: url('assets/watercolor-rings33.webp'); }
+.progress-path { --equipment-art: url('assets/watercolor-parallettes33.webp'); }
+.intro > *, .goals-section > *, .progress-path > * {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  .intro::before, .goals-section::before, .progress-path::before {
+    width: 310px;
+    top: 22px;
+    right: -3%;
+    opacity: .09;
+  }
+}
