@@ -1,0 +1,34 @@
+/* Inter for interface and reading text; Exo 2 Extra Bold Italic for headings.
+   Both are licensed under SIL OFL 1.1. License files are bundled in assets/fonts. */
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-variable.woff') format('woff');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Exo 2';
+  src: url('assets/fonts/exo2-italic-variable.woff') format('woff');
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+body, button, input, select, textarea,
+.day, .day span, .price {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+.hero h1, .manifesto h2, .parallax-copy h3, .gallery-feature h3,
+.final-cta h2, .faq h2, dialog h2, .legal h1, .legal h2 {
+  font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-synthesis: none;
+  letter-spacing: -.025em;
+}
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+}
