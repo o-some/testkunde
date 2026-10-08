@@ -1,0 +1,21 @@
+/* Optional CALISTHENICS line art. Remove this stylesheet link to restore the prior backgrounds. */
+@media (min-width: 901px) {
+  .intro,
+  .goals-section,
+  .progress-path {
+    background-repeat: no-repeat;
+    background-size: clamp(270px, 29vw, 430px) auto;
+  }
+  .intro {
+    background-image: url("assets/outline-pullup29.svg");
+    background-position: right 5% top 66px;
+  }
+  .goals-section {
+    background-image: url("assets/outline-rings29.svg");
+    background-position: right 5% top 66px;
+  }
+  .progress-path {
+    background-image: url("assets/outline-parallettes29.svg");
+    background-position: right 5% top 66px;
+  }
+}
